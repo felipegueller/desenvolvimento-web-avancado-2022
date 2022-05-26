@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class MainController extends Controller
 {
     public function Main() {
-        echo "Hello, welcome to course!";
+        return view('site.main');
     }
 }
