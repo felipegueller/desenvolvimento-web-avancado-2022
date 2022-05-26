@@ -13,14 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return 'Hello, welcomte to course!';
-});
+Route::get('/', 'MainController@Main');
 
-Route::get('/about-us', function() {
-    return 'About us';
-});
+Route::get('/about-us', 'AboutUsController@AboutUs');
 
-Route::get('/contact', function () {
-    return 'Contatc us';
-});
+Route::get('/contact', 'ContactController@Contact');
